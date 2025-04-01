@@ -11,11 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
     menuIcon.style.display = "block";
 
     // Ensure side-panel is hidden on mobile
-    sidePanel.style.right = "-70%";
+    sidePanel.style.right = "-100%";
 
     // Toggle menu
     menuIcon.addEventListener("click", function () {
-        sidePanel.style.right = "0";
+        sidePanel.style.right = "1";
     });
 
     // Close menu
