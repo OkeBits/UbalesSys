@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrolled Students</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-and-text">
+            <img class="school-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVXVS2K0UXDA_4FwxXHZxe5VbQ1XXQ1mnUvQ&s" alt="School Logo">
+            <div class="header-text">
+                <h1>West Prime Horizon Institute Inc.</h1>
+                <p>F Roxas St, Pagadian City, Zamboanga del Sur</p>
+            </div>
+        </div>
+        <button class="back-button" onclick="goBack()">🏠</button>
+    </header>
+
+    <div class="student-container">
+        <img class="school-logo1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVXVS2K0UXDA_4FwxXHZxe5VbQ1XXQ1mnUvQ&s" alt="School Logo">
+        <h2>ENROLLED STUDENTS</h2>
+        <form id="search-form">
+            <input type="text" name="search" placeholder="Search by name" id="search-input">
+            <button type="submit">Search</button>
+        </form>
+
+        <table id="student-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Average Grade</th>
+                    <th>Section</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Students will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <p>&copy; 2025 West Prime Horizon Institute Inc. | All Rights Reserved</p>
+    </footer>
+    <script defer src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: url('https://scontent.fcgy2-1.fna.fbcdn.net/v/t39.30808-6/482018680_1272497371105790_8252854055727989493_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFjCIUiRsZgRj0-6zLaSy93AdFXqfxOC94B0Vep_E4L3sIjZfNxsWFtscOlNyb4zVAH4d33NnMrVYweP798FcSj&_nc_ohc=QY3BFywB2sQQ7kNvgGSbzlz&_nc_oc=AdmH9RhYD-icsBZwozVUP1IT-mSQ-pNN0Nj3pq60clAi_2cU7ynRhq1YFBkGPCJG97Q&_nc_zt=23&_nc_ht=scontent.fcgy2-1.fna&_nc_gid=bW_HdF5YjupMZSMUGcmutQ&oh=00_AYHKYI0k5_PpDz4C2hJ-562ill_rHS2A1NQJBBBnQymECg&oe=67F16400') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+header {
+    background: rgba(2, 21, 129, 0.973);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-and-text {
+    display: flex;
+    align-items: center; /* Align logo and text in one row */
+}
+
+.school-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px; /* Adds spacing between logo and text */
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 18px; /* Adjust font size if needed */
+    font-weight: bold;
+}
+
+.header-text p {
+    margin: 0;
+    font-size: 11px;
+}
+
+.menu-icon {
+    background-color: #2240EB; /* Same as other buttons */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px; /* Align with menu icon */
+    top: 10px;
+}
+
+
+.school-logo {
+    width: 50%;
+    width: 65px;
+    border-radius: 50%;
+}
+.school-logo1 {
+    width: 60%;
+    width: 100px;
+    border-radius: 50%;
+}
+
+/* Sliding Side Panel */
+.side-panel {
+    position: fixed;
+    top: 0;
+    right: -50%; /* Initially hidden */
+    width: 30%; /* 50% of the screen */
+    height: 100%;
+    background: rgba(2, 21, 129, 0.973);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+/* For Mobile View */
+@media screen and (max-width: 768px) {
+    .side-panel {
+        width: 70%; /* 70% width on smaller screens */
+    }
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.panel-btn {
+    display: block;
+    text-decoration: none;
+    background: #1411d6;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.panel-btn:hover {
+    background: #2980b9;
+}
+
+.back-button {
+    background-color: #2240EB; /* Same as other buttons */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px; /* Align with menu icon */
+    top: 10px;
+    margin: auto;
+}
+
+.back-button:hover {
+    background-color: #1a2fa8; /* Darker blue on hover */
+}
+
+
+.description {
+    background: rgba(2, 21, 129, 0.973);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    width: 65%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.enrollment-container  {
+    background: rgba(2, 21, 129, 0.973);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    width: 65%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.student-container {
+    background: rgba(2, 21, 129, 0.973);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    width: 65%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 900px; /* Fixed width */
+    max-width: 100%; /* Ensure it doesn't overflow on smaller screens */
+    box-sizing: border-box; /* Includes padding and border in the element's total width */
+}
+
+
+button {
+    background-color: #2240EB;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #1a2fa8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+th {
+    background: #2240EB;
+    color: white;
+}
+
+.delete-btn {
+    background-color: red;
+    margin: auto;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #container {
+        width: 100%;
+        overflow-x: auto; /* Larger on small screens */
+    }
+    
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap; /* Prevents table from breaking */
+    }
+
+    th, td {
+        font-size: 14px; /* Adjust text size for better readability */
+        padding: 8px;
+    }
+
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(0, 7, 46);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}

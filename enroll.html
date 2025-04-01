@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-and-text">
+            <img class="school-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVXVS2K0UXDA_4FwxXHZxe5VbQ1XXQ1mnUvQ&s" alt="School Logo">
+            <div class="header-text">
+                <h1>West Prime Horizon Institute Inc.</h1>
+                <p>F Roxas St, Pagadian City, Zamboanga del Sur</p>
+            </div>
+        </div>
+        <button class="back-button" onclick="goBack()">🏠</button>
+    </header>
+
+    <div class="enrollment-container">
+        <img class="school-logo1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVXVS2K0UXDA_4FwxXHZxe5VbQ1XXQ1mnUvQ&s" alt="School Logo">
+        <h2>STUDENT ENROLLMENT</h2>
+        <form id="enrollment-form">
+            <label for="name">Student Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="grade">Average Grade:</label>
+            <input type="number" id="grade" name="grade" step="0.01" required>
+            
+            <button type="submit">Enroll</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2025 West Prime Horizon Institute Inc. | All Rights Reserved</p>
+    </footer>
+    <script defer src="script.js"></script>
+</body>
+</html>
