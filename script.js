@@ -1,5 +1,5 @@
 function goBack() {
-    window.location.href = "index.html";
+    window.location.href = "/";
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -7,11 +7,19 @@ document.addEventListener("DOMContentLoaded", function () {
     const sidePanel = document.querySelector(".side-panel");
     const closeBtn = document.querySelector(".close-btn");
 
+    // Ensure menu button is visible on mobile
+    menuIcon.style.display = "block";
+
+    // Ensure side-panel is hidden on mobile
+    sidePanel.style.right = "-70%";
+
+    // Toggle menu
     menuIcon.addEventListener("click", function () {
         sidePanel.style.right = "0";
     });
 
+    // Close menu
     closeBtn.addEventListener("click", function () {
-        sidePanel.style.right = "-50%";
+        sidePanel.style.right = "-70%";
     });
 });
