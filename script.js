@@ -1,5 +1,5 @@
 function goBack() {
-    window.location.href = "/";
+    window.location.href = "index.html";
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -7,22 +7,21 @@ document.addEventListener("DOMContentLoaded", function () {
     const sidePanel = document.querySelector(".side-panel");
     const closeBtn = document.querySelector(".close-btn");
 
-    // Ensure menu button is visible on mobile
-    menuIcon.style.display = "block";
+    function toggleMenu() {
+        if (sidePanel.style.right === "0px") {
+            sidePanel.style.right = "-70%";
+        } else {
+            sidePanel.style.right = "0px";
+        }
+    }
 
-    // Ensure side-panel is hidden on mobile
-    sidePanel.style.right = "-100%";
+    menuIcon.addEventListener("click", toggleMenu);
+    closeBtn.addEventListener("click", toggleMenu);
 
-    // Toggle menu
-    menuIcon.addEventListener("click", function () {
-        sidePanel.style.right = "0";
+    // Close menu when clicking outside
+    document.addEventListener("click", function (event) {
+        if (!sidePanel.contains(event.target) && !menuIcon.contains(event.target)) {
+            sidePanel.style.right = "-70%";
+        }
     });
-
-    // Close menu
-    closeBtn.addEventListener("click", function () {
-        sidePanel.style.right = "-70%";
-    });
-    
-  document.getElementById("menu-toggle").addEventListener("click", function() {
-    document.getElementById("side-panel").classList.toggle("hidden");
-  });
+});
