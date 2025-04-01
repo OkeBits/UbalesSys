@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Toggle menu
     menuIcon.addEventListener("click", function () {
-        sidePanel.style.right = "1";
+        sidePanel.style.right = "0";
     });
 
     // Close menu
