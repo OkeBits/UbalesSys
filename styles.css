@@ -73,11 +73,12 @@ header {
 }
 
 /* Sliding Side Panel */
+/* Sliding Side Panel */
 .side-panel {
     position: fixed;
     top: 0;
-    right: -50%; /* Initially hidden */
-    width: 30%; /* 50% of the screen */
+    right: -70%; /* Initially hidden off-screen */
+    width: 70%; /* Adjust width for better mobile experience */
     height: 100%;
     background: rgba(2, 21, 129, 0.973);
     color: white;
@@ -89,12 +90,22 @@ header {
     z-index: 1000;
 }
 
+
 /* For Mobile View */
 @media screen and (max-width: 768px) {
     .side-panel {
-        width: 70%; /* 70% width on smaller screens */
+        .side-panel {
+            width: 30%; /* Smaller width for larger screens */
+            right: -30%; /* Ensure it is hidden initially */
+        }
     }
-}
+    
+    /* Show side panel when active */
+    .side-panel.active {
+        right: 0 !important; /* Ensure it fully slides in */
+    }
+    }
+
 
 .close-btn {
     position: absolute;
