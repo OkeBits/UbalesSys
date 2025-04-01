@@ -22,4 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     closeBtn.addEventListener("click", function () {
         sidePanel.style.right = "-70%";
     });
-});
+    
+  document.getElementById("menu-toggle").addEventListener("click", function() {
+    document.getElementById("side-panel").classList.toggle("hidden");
+  });
